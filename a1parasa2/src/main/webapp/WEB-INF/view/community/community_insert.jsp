@@ -4,6 +4,7 @@
 <html lang="en">
 
 
+
 <body>
 <!-- Contact Start -->
 <div class="container-xxl py-5">
@@ -23,6 +24,7 @@
 					<input class="form-control form-control-sm" id="formFileSm" type="file">
 				</div>
 					<button type="submit" class="btn btn-secondary mb-3">제출하기</button>
+					<button class="btn btn-secondary mb-3 nav-community">목록으로</button>
 </div>
 </div>
 </div>
@@ -43,7 +45,7 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
     <script src="js/ajax_community.js"></script>
 </body>
 
