@@ -33,6 +33,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    
+    
+    
+    
 </head>
 
 <body>
@@ -202,6 +207,8 @@ String sessionId = (String)session.getAttribute("sessionId");
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
     <script src="js/ajax_login.js"></script>
+    
+    
 </body>
 
 </html>

@@ -2,11 +2,14 @@
     pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
-
-
-
+<head>
+<script src="/js/summernote/summernote-lite.js"></script>
+<script src="/js/summernote/lang/summernote-ko-KR.js"></script>
+<link rel="stylesheet" href="/css/summernote/summernote-lite.css">
+</head>
 <body>
 <!-- Contact Start -->
+<form>
 <div class="container-xxl py-5">
 	<div class="container">
 		<div class="row g-4">
@@ -17,7 +20,7 @@
 					<input type="hidden" name="bdIndent" value="">
 					<input type="text" name="bdTitle" class="form-control mt-4 mb-2" placeholder="제목을 입력해주세요." required>
 				<div class="form-group">
-					<textarea class="form-control" rows="10" name="bdContent" placeholder="내용을 입력해주세요" required>내용</textarea>
+					<textarea id="summernote" name="editordata" class="form-control" rows="10" placeholder="내용을 입력해주세요" required>내용</textarea>
 				</div>
 				<div class="mb-3">
 					<label for="formFileSm" class="form-label"></label>
@@ -25,28 +28,22 @@
 				</div>
 					<button type="submit" class="btn btn-secondary mb-3">제출하기</button>
 					<button class="btn btn-secondary mb-3 nav-community">목록으로</button>
+				</div>
+			</div>
+		</div>
+	</div>
 </div>
-</div>
-</div>
-</div>
-</div>
-        <!-- Contact End -->
+</form>
 
-        <!-- Back to Top -->
-        <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="bi bi-arrow-up"></i></a>
-    </div>
-
-    <!-- JavaScript Libraries -->
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
-    <!-- Template Javascript -->
-    <script src="js/index.js"></script>
-    <script src="js/ajax_community.js"></script>
+	<script>
+    	$('#summernote').summernote({
+    		  height: 300,                 // 에디터 높이
+    		  minHeight: null,             // 최소 높이
+    		  maxHeight: null,             // 최대 높이
+    		  lang: "ko-KR",					
+              
+    	});
+    </script>
+    
 </body>
-
 </html>
