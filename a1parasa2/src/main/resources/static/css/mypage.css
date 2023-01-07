@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+.mypage_title{
+	margin-left : 45px;
+}
+
+.wow .u1{
+	margin-left : 45px;
+	font-size : 25px;
+	margin-bottom : 20px;
+	cursor:pointer;
+}
+
+.btnSelect:hover{
+	cursor:pointer;
+}
