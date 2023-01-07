@@ -19,7 +19,7 @@
                 <div class="row g-4">
                     <div class="col-md-12">
                         <div class="wow fadeInUp" data-wow-delay="0.5s">
-                            <form>
+                            <form class='frm frm_insert' method='post' enctype='multipart/form-data'>
                                 <div class="row g-3">
                                     <div class="col-lg-12  text-lg-start text-center">
                                         <p class="fs-2">상품 등록 페이지</p>
@@ -32,7 +32,7 @@
                                                		<label>상품명</label>
                                                 </div>
                                                 <div class='col-lg-9 mb-3 row'>
-                                                	<input type='text' class='form-control' placeholder='상품명을 입력하세요'>
+                                                	<input type='text' name='name' class='form-control' placeholder='상품명을 입력하세요'>
                                                 </div>
                                                 <hr>
                                                
@@ -40,7 +40,7 @@
                                                		<label>상품설명</label>
                                                 </div>
                                                 <div class='col-lg-9 mb-3 row'>
-                                                	<textarea class="form-control col-sm-9" rows="5"></textarea>
+                                                	<textarea class="form-control col-sm-9" name='contents' rows="5"></textarea>
                                                 </div>
                                                 <hr>
                                                 
@@ -48,7 +48,7 @@
                                                		<label>가격</label>
                                                 </div>
                                                 <div class='col-lg-9 mb-3 row'>
-                                                	<input type='text' class='form-control' placeholder='가격을 입력하세요'>
+                                                	<input type='text' class='form-control' name='price' placeholder='가격을 입력하세요'>
                                                 </div>
                                                 <hr>
                                                 
@@ -56,7 +56,7 @@
                                                		<label>카테고리</label>
                                                 </div>
                                                 <div class='col-lg-9 mb-3 row'>
-                                                	<select class="form-select" aria-label="Default select example">
+                                                	<select class="form-select" name='category_id' aria-label="Default select example">
 													  <option selected>카테고리</option>
 													  <option value="1">원예</option>
 													  <option value="2">의류</option>
@@ -69,7 +69,7 @@
                                                		<label>배송방법</label>
                                                 </div>
                                                 <div class='col-lg-9 mb-3 row'>
-                                                	<select class="form-select" aria-label="Default select example">
+                                                	<select class="form-select" name='delivery_fee' aria-label="Default select example">
 													  <option selected>선불(3000원)</option>
 													  <option value="1">착불</option>
 													  <option value="2">기타 - 도서지역</option>
@@ -91,8 +91,8 @@
                                                 </div>
                                                 <hr>
                                                 <div class='text-center'>
-                                                	<button type="button" class="col-lg-3 mb-3 btn btn-primary">취소하기</button>
-                                                	<button type="button" class="col-lg-3 mb-3 btn btn-primary">등록하기</button>
+                                                	<button type="button" class="col-lg-3 mb-3 btn btn-primary btnCancel">취소하기</button>
+                                                	<button type="button" class="col-lg-3 mb-3 btn btn-primary btnInsertR">등록하기</button>
                                                 </div>
 
 
@@ -115,8 +115,6 @@
                         </div>    
 
                                     
-                            </form>
-                        </div>
                     </div>
                 </div>
             </div>

@@ -22,7 +22,9 @@ public class ProductController {
 		mv.setViewName("product/orderComplete");
 		return mv;		
 	}
-
+	
+	/*상품등록 페이지에서 등록하기 클릭시*/
+	
 	
 	
 }
