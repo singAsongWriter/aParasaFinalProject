@@ -79,7 +79,11 @@
  </div>
 </div>
 
+	<!-- Template Javascript -->
+    <script src="js/ajax_product.js"></script>
 	
 	    
 </body>
+
+
 </html>

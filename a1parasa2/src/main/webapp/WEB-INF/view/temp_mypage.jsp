@@ -24,30 +24,37 @@
                                 <div class="form-group">
                                 <br>
                                 	<h4 class="col-md-12 u_profile_h4">닉네임</h4>
+                                	<br>
 	                                <div class="col-md-12 u_profile_div">
 	                                	<span >준센</span>
 	                                </div>
                                 </div>
                                 <div class="form-group">
+                                <br>
                                 	<h4 class="col-md-12 u_profile_h4">전화번호</h4>
+                                    <br>
                                     <div class="col-md-12 u_profile_div">
                                     	<span >010-1234-5678</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                <br>
                                 	<h4 class="col-md-12 u_profile_h4">성별</h4>
+                                    <br>
                                     <div class="col-md-12 u_profile_div">
                                     	<span >남성</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
+                                <br>
                                 	<h4 class="col-md-12 u_profile_h4">생년월일</h4>
+                                    <br>
                                     <div class="col-md-12 u_profile_div">
                                     	<span >1992/04/01</span>
 									</div>
                                 </div>
                                 <div class="mt-5 col-md-6">
-									<button class="btn btn-primary profile-button" type="button">수정하기</button>
+									<button class="btn btn-primary profile-button mypage_modify_button" type="button">수정하기</button>
 								</div>
                                 
                             </div>

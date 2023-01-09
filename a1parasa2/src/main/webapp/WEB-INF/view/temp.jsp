@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +12,14 @@
                     <h1 class="display-5 animated fadeIn mb-4">팔든 사든 마법처럼 <span class="text-primary"><br/>돈이 쏟아지는</span><br/> 구독 플랫폼 </h1>
                     <p class="animated fadeIn mb-4 pb-2">파는 사람은 계속 들어오는 수입때문에, 사는 사람은 끝없는 할인에 잔뜩 감동받으니까,
                      파라사에서는 모두가 마음 따뜻합니다.</p>
-                    <a href="" class="btn btn-primary py-3 px-5 me-3 animated fadeIn">파라셀러 등록하기</a>
+                	 <c:choose>
+                     	 <c:when test="${signIn eq null }">
+                   	 		<a href="#" class="btn btn-primary py-3 px-5 me-3 animated fadeIn nav-login">파라셀러 등록하기</a>               	 
+                         </c:when>
+	   					 <c:otherwise>
+	                   	 	<a href="#" class="btn btn-primary py-3 px-5 me-3 animated fadeIn parasellerResgistration">파라셀러 등록하기</a>
+						 </c:otherwise>
+					 </c:choose>
                 </div>
                 <div class="col-md-6 animated fadeIn">
                     <div class="owl-carousel header-carousel">
@@ -26,7 +34,6 @@
             </div>
         </div>
         <!-- Header End -->
-
 
         <!-- Search Start -->
         <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
@@ -313,7 +320,7 @@
                                 </div>
                             </div>
                             <div class="col-12 text-center wow fadeInUp" data-wow-delay="0.1s">
-                                <a class="btn btn-primary py-3 px-5" href="">Browse More Property</a>
+                                <a class="btn btn-primary py-3 px-5 btnSearch" href="#">상품 및 서비스 더 보기</a>
                             </div>
                         </div>
                     </div>
@@ -434,7 +441,7 @@
                                 </div>
                             </div>
                             <div class="col-12 text-center">
-                                <a class="btn btn-primary py-3 px-5" href="">Browse More Property</a>
+                                <a class="btn btn-primary py-3 px-5 btnSearch" href="#">상품 및 서비스 더 보기</a>
                             </div>
                         </div>
                     </div>
@@ -555,7 +562,7 @@
                                 </div>
                             </div>
                             <div class="col-12 text-center">
-                                <a class="btn btn-primary py-3 px-5" href="">Browse More Property</a>
+                                <a class="btn btn-primary py-3 px-5 btnSearch" href="#">상품 및 서비스 더 보기</a>
                             </div>
                         </div>
                     </div>
@@ -713,9 +720,18 @@
                 </div>
             </div>
         </div>
-        <!-- Call to Action End -->
-        
-        <!-- Template Javascript -->
+        <!-- Call to Action End -->     
+           
+		<!-- JavaScript Libraries -->
+	    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+	    <script src="lib/wow/wow.min.js"></script>
+	    <script src="lib/easing/easing.min.js"></script>
+	    <script src="lib/waypoints/waypoints.min.js"></script>
+	    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    
+	    <!-- Template JavaScript -->
+	    <script src="js/index.js"></script>
 </body>
 
 </html>
