@@ -18,7 +18,7 @@
                                 	<h4 class="col-md-12 u_profile_h4">이름</h4>
                                 	<br>
                                 	<div class="col-md-12 u_profile_div">
-                                    	<span >홍길동</span>
+                                    	<span >황도건</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -54,7 +54,7 @@
 									</div>
                                 </div>
                                 <div class="mt-5 col-md-6">
-									<button class="btn btn-primary profile-button mypage_modify_button" type="button">수정하기</button>
+									<a href="#" class="btn btn-primary profile-button mypage_modify_button">수정하기</a>
 								</div>
                                 
                             </div>

@@ -114,12 +114,10 @@
 
                   <ul class="list-inline items d-flex justify-content-between">
                     <li class="list-inline-item items-list">
-                      <p class="py-1 px-2 rounded text-white" style="background-color: #00B98E;">주문완료</p
-                        class="py-1 px-2 rounded text-white" style="background-color: #f37a27;">
+                      <p class="py-1 px-2 rounded text-white" style="background-color: #00B98E;">주문완료</p>
                     </li>
                     <li class="list-inline-item items-list">
-                      <p class="py-1 px-2 rounded text-white" style="background-color: #00B98E;">배송시작</p
-                        class="py-1 px-2 rounded text-white" style="background-color: #00B98E;">
+                      <p class="py-1 px-2 rounded text-white" style="background-color: #00B98E;">배송시작</p>
                     </li>
                     <li class="list-inline-item items-list">
                       <p class="py-1 px-2 rounded text-white" style="background-color: #00B98E;">배송중
@@ -129,21 +127,26 @@
                       <p style="margin-right: -8px;">배송완료</p>
                     </li>
                   </ul>
-
+                  <br/>
+                  <div>
+	                  <a href="/" class="btn btn-primary px-3 d-none d-lg-flex" style="width : 160px;">홈으로 돌아가기</a><br/>
+	                  <a href="#" class="btn btn-primary px-3 d-none d-lg-flex btnSearch" style="width : 170px;">더 많은 상품 보기</a>
+                  </div>
                 </div>
-
               </div>
             </div>
-
             <p class="mt-4 pt-2 mb-0">도움이 필요하신가요? <a href="#!" style="color: #00B98E;">Please contact
                 us</a></p>
-
           </div>
         </div>
       </div>
     </div>
   </div>
 </section>
+
+
+<script src="js/index.js"></script>
+
 </body>
 </html>
 

@@ -19,10 +19,9 @@
                 <div class="row g-4">
                     <div class="col-md-12">
                         <div class="wow fadeInUp" data-wow-delay="0.5s">
-<<<<<<< HEAD
+
                             <form class='frm frm_insert' method='post' enctype='multipart/form-data'>
-=======
->>>>>>> refs/remotes/origin/colleft
+
                                 <div class="row g-3">
                                     <div class="col-lg-12  text-lg-start text-center">
                                         <p class="fs-2">상품 등록 페이지</p>
@@ -104,14 +103,14 @@
                                     
                                     
                                 </div>
-<<<<<<< HEAD
+
                             </form>
                         </div>    
 
                                     
-=======
+
                        	   </div>  
->>>>>>> refs/remotes/origin/colleft
+
                     </div>
                 </div>
             </div>
@@ -129,6 +128,7 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
+    <script src="js/main.js"></script>
     <script src="js/ajax_mypage_user.js"></script>
 </body>
 </html>
