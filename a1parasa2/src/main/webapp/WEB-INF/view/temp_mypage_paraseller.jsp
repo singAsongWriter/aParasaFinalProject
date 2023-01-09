@@ -12,69 +12,79 @@
         <div class="page-wrapper">
             <div class="container-fluid">
                 <div class="row">
-                   	 <!-- Column -->
-	                    <div class="col-lg-12  text-lg-start text-center">
-                            <p class="fs-2">파라셀러 즐겨찾기</p>
-                        </div>
-	                    <div class="col-lg-12 col-xlg-12 col-md-12">
+                    <!-- Column -->
+                    <div class="col-lg-8 col-xlg-9 col-md-7">
+                        <br><br>
                         <div class="card">
                             <div class="card-block">
                             	<div class="form-group">
-                                	<label class="col-md-12">닉네임</label>
-                                	<div class="col-md-12">
-                                    	<input type="text" class="form-control form-control-line">
+                            	<br>
+                                	<h4 class="col-md-12 u_profile_h4">닉네임</h4>
+                                	<br>
+                                	<div class="col-md-12 u_profile_div">
+                                    	<span >섹시도건</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                	<label for="example-email" class="col-md-12">지역</label>
-	                                <div class="col-md-12">
-	                                	<input type="text" class="form-control form-control-line" id="region">
+                                <br>
+                                	<h4 class="col-md-12 u_profile_h4">지역</h4>
+                                	<br>
+	                                <div class="col-md-12 u_profile_div">
+	                                	<span >개성</span>
 	                                </div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-sm-12">상품 구분</label>
-                                    <div class="col-sm-12">
-                                    	<select class="form-control form-control-line">
-                                        	<option>상품</option>
-                                        	<option>서비스</option>
-                                        </select>
+                                <br>
+                                	<h4 class="col-md-12 u_profile_h4">상품구분</h4>
+                                    <br>
+                                    <div class="col-md-12 u_profile_div">
+                                    	<span >상품</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-md-12">카테고리</label>
-                                    <div class="col-md-12">
-                                    	<input type="text" class="form-control form-control-line">
+                                <br>
+                                	<h4 class="col-md-12 u_profile_h4">카테고리</h4>
+                                    <br>
+                                    <div class="col-md-12 u_profile_div">
+                                    	<span >원예</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-md-12">경력</label>
-                                    <div class="col-md-12">
-                                    	<input type="text" class="form-control form-control-line">
-                                    </div>
+                                <br>
+                                	<h4 class="col-md-12 u_profile_h4">경력</h4>
+                                    <br>
+                                    <div class="col-md-12 u_profile_div">
+                                    	<span >5년</span>
+									</div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-md-12">학교</label>
-                                    <div class="col-md-12">
-                                    	<input type="text" class="form-control form-control-line">
-                                    </div>
+                                <br>
+                                	<h4 class="col-md-12 u_profile_h4">학교</h4>
+                                    <br>
+                                    <div class="col-md-12 u_profile_div">
+                                    	<span >김일성종합대학</span>
+									</div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-md-12">자격증</label>
-                                    <div class="col-md-12">
-                                    	<input type="text" class="form-control form-control-line">
-                                    </div>
+                                <br>
+                                	<h4 class="col-md-12 u_profile_h4">자격증</h4>
+                                    <br>
+                                    <div class="col-md-12 u_profile_div">
+                                    	<span >無</span>
+									</div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-md-12">소개</label>
-                                	<div class="col-md-12">
-                                		<textarea rows="5" class="form-control form-control-line"></textarea>
-                                	</div>
+                                <br>
+                                	<h4 class="col-md-12 u_profile_h4">소개</h4>
+                                    <br>
+                                    <div class="col-md-12 u_profile_div">
+                                    	<span >안녕하세요? 꽃에 미친 남자, 꽃미남 입니다.</span>
+									</div>
                                 </div>
-                                <div class="form-group">
-                                	<div class="col-sm-12">
-                                    	<button class="btn btn-success">수정하기</button>
-                                    </div>
-                                </div>
+                                <div class="mt-5 col-md-6">
+									<button class="btn btn-primary profile-button mypage_modify_button" type="button">수정하기</button>
+								</div>
+                                
                             </div>
                         </div>
                     </div>
