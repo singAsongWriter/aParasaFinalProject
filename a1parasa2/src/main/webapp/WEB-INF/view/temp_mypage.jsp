@@ -10,38 +10,45 @@
                 <div class="row">
                     <!-- Column -->
                     <div class="col-lg-8 col-xlg-9 col-md-7">
+                        <br><br>
                         <div class="card">
                             <div class="card-block">
                             	<div class="form-group">
-                                	<label class="col-md-12">이름</label>
-                                	<div class="col-md-12">
-                                    	<span class="form-control form-control-line">홍길동</label>
+                            	<br>
+                                	<h4 class="col-md-12 u_profile_h4">이름</h4>
+                                	<br>
+                                	<div class="col-md-12 u_profile_div">
+                                    	<span >홍길동</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                	<label for="example-email" class="col-md-12">닉네임</label>
-	                                <div class="col-md-12">
-	                                	<span class="form-control form-control-line" id="nickname">준센</span>
+                                <br>
+                                	<h4 class="col-md-12 u_profile_h4">닉네임</h4>
+	                                <div class="col-md-12 u_profile_div">
+	                                	<span >준센</span>
 	                                </div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-md-12">전화번호</label>
-                                    <div class="col-md-12">
-                                    	<span class="form-control form-control-line">010-1234-5678</span>
+                                	<h4 class="col-md-12 u_profile_h4">전화번호</h4>
+                                    <div class="col-md-12 u_profile_div">
+                                    	<span >010-1234-5678</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-md-12">성별</label>
-                                    <div class="col-md-12">
-                                    	<span class="form-control form-control-line">남성</span>
+                                	<h4 class="col-md-12 u_profile_h4">성별</h4>
+                                    <div class="col-md-12 u_profile_div">
+                                    	<span >남성</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-md-12">생년월일</label>
-                                    <div class="col-md-12">
-                                    	<span class="form-control form-control-line">1992/04/01</span>
+                                	<h4 class="col-md-12 u_profile_h4">생년월일</h4>
+                                    <div class="col-md-12 u_profile_div">
+                                    	<span >1992/04/01</span>
 									</div>
                                 </div>
+                                <div class="mt-5 col-md-6">
+									<button class="btn btn-primary profile-button" type="button">수정하기</button>
+								</div>
                                 
                             </div>
                         </div>

@@ -91,8 +91,8 @@
                                                 </div>
                                                 <hr>
                                                 <div class='text-center'>
-                                                	<button type="button" class="col-lg-3 mb-3 btn btn-primary btnCancel">취소하기</button>
-                                                	<button type="button" class="col-lg-3 mb-3 btn btn-primary btnInsertR">등록하기</button>
+                                                	<button type="button" class="col-lg-3 mb-3 btn btn-primary product_registration_btncancel">취소하기</button>
+                                                	<button type="button" class="col-lg-3 mb-3 btn btn-primary product_registration_btninsertR">등록하기</button>
                                                 </div>
 
 
