@@ -41,7 +41,7 @@
 		            				<input type="text" name="findPrcode" size=14 value="" placeholder="제품 코드 입력"/>
                                     </div>
                                     
-                                    <a href='' id='btnSearch' class ='btnA' onclick='btnSearch()'>
+                                    <a href='#' id='btnSearch' class ='btnA' onclick='btnSearch()'>
 			                          <span></span>
 			                          <span></span>
 			                          <span></span>

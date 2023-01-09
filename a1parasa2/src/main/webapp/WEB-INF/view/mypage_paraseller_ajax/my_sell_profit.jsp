@@ -56,7 +56,7 @@
                                         <div class="tab-pane active" id="home" role="tabpanel" aria-labelledby="home-tab">
                                             <div class="col-lg-12 row">
                                                 <img src="./img/carousel-1.jpg" class="col-lg-3 img-thumbnail" alt="...">
-                                                <div class="col-lg-6 mb-3 row">
+                                                <div class="col-lg-9 mb-3 row">
                                                     <label for="staticEmail" class="col-sm-2 col-form-label">상품명</label>
                                                     <div class="col-sm-10">
                                                       <span class="form-control-plaintext" id="staticEmail"></span>
@@ -77,24 +77,14 @@
                                         <div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                                             
                                             <div class="col-lg-12 row">
-                                                <img src="./img/carousel-1.jpg" class="col-lg-3 img-thumbnail" alt="...">
-                                                <div class="col-lg-6 mb-3 row">	
-                                                
-                                                    <label for="staticEmail" class="col-sm-2 col-form-label">상품명</label>
-                                                    <div class="col-sm-10">
-                                                      <span class="form-control-plaintext" id="staticEmail"></span>
-                                                    </div>
-
-                                                    <label for="aw" class="col-sm-2 col-form-label">금액</label>
-                                                    <div class="col-sm-10">
-                                                      <span class="form-control-plaintext" id="aw"></span>
-                                                    </div>
-
-                                                    <label for="aw" class="col-sm-2 col-form-label">출금일자</label>
-                                                    <div class="col-sm-10">
-                                                      <span class="form-control-plaintext" id="aw"></span>
-                                                    </div>
-                                                </div>
+                                            	<div class='col-sm-5'>
+                                            		<span>출금일자</span>
+                                            		<span>2022-12-20</span>
+                                            	</div>
+                                            	<div class='col-sm-5'>
+                                            		<span>금액</span>
+                                            		<span>50,000</span>
+                                            	</div>
                                      	   </div>
                                         </div>
                                     </div>
