@@ -19,12 +19,11 @@
                 <div class="row g-4">
                     <div class="col-md-12">
                         <div class="wow fadeInUp" data-wow-delay="0.5s">
-                            <form>
                                 <div class="row g-3">
                                     <div class="col-lg-12  text-lg-start text-center">
                                         <p class="fs-2">상품 등록 페이지</p>
                                     </div>
-
+                                    <form name="productRegistrationForm">
                                     <div class="contents ">
                                         <div class="col-lg-12 row">
 												<hr>
@@ -94,37 +93,22 @@
                                                 	<button type="button" class="col-lg-3 mb-3 btn btn-primary">취소하기</button>
                                                 	<button type="button" class="col-lg-3 mb-3 btn btn-primary">등록하기</button>
                                                 </div>
-
-
-                                                    
-                  
-                                        </div>
+                                       		 </div>
                                         <hr>
-                                        
-                                        
-
                                     </div>
+                                    </form>
                                     
                                     
-
-
-
-
                                 </div>
-                            </form>
-                        </div>    
-
-                                    
-                            </form>
-                        </div>
+                       	   </div>  
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Contact End -->
-
     </div>
+    <!-- Contact End -->
 
+   
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>

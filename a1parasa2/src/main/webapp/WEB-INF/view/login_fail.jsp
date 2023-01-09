@@ -75,27 +75,27 @@ String sessionId = (String)session.getAttribute("sessionId");
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle nav-product" data-bs-toggle="dropdown">상품</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="#" class="dropdown-item">원예</a>
-                                <a href="#" class="dropdown-item">의류</a>
-                                <a href="#" class="dropdown-item">잡화</a>
-                                <a href="#" class="dropdown-item">수집품</a>
-                                <a href="#" class="dropdown-item">도서</a>
-                                <a href="#" class="dropdown-item">구강/면도</a>
-                                <a href="#" class="dropdown-item">생리대/성인기저귀</a>
-                                <a href="#" class="dropdown-item">헤어</a>
-                                <a href="#" class="dropdown-item">메이크업</a>
-                                <a href="#" class="dropdown-item">임부용품</a>
-                                <a href="#" class="dropdown-item">이유용품/유아식기</a>
-                                <a href="#" class="dropdown-item">강아지사료</a>
-                                <a href="#" class="dropdown-item">채소</a>
-                                <a href="#" class="dropdown-item">반찬/간편식/대용식</a>
+                                <a href="#" class="dropdown-item btnSearch">원예</a>
+                                <a href="#" class="dropdown-item btnSearch">의류</a>
+                                <a href="#" class="dropdown-item btnSearch">잡화</a>
+                                <a href="#" class="dropdown-item btnSearch">수집품</a>
+                                <a href="#" class="dropdown-item btnSearch">도서</a>
+                                <a href="#" class="dropdown-item btnSearch">구강/면도</a>
+                                <a href="#" class="dropdown-item btnSearch">생리대/성인기저귀</a>
+                                <a href="#" class="dropdown-item btnSearch">헤어</a>
+                                <a href="#" class="dropdown-item btnSearch">메이크업</a>
+                                <a href="#" class="dropdown-item btnSearch">임부용품</a>
+                                <a href="#" class="dropdown-item btnSearch">이유용품/유아식기</a>
+                                <a href="#" class="dropdown-item btnSearch">강아지사료</a>
+                                <a href="#" class="dropdown-item btnSearch">채소</a>
+                                <a href="#" class="dropdown-item btnSearch">반찬/간편식/대용식</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle nav-service" data-bs-toggle="dropdown">서비스</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="#" class="dropdown-item">세탁</a>
-                                <a href="#" class="dropdown-item">코디</a>
+                                <a href="#" class="dropdown-item btnSearch">세탁</a>
+                                <a href="#" class="dropdown-item btnSearch">코디</a>
                             </div>
                         </div>
                         <a href="#" class="nav-item nav-link nav-community">커뮤니티</a>

@@ -4,9 +4,6 @@
 <html lang="en">
 
 <body>
-    
-        
-
         <!-- Community Start -->
         <div class="container-xxl py-5">
             <div class="container">
@@ -37,7 +34,7 @@
                                               </tr>
                                             </thead>
                                             <tbody>
-                                              <tr onclick="location.href='contants-dtl.html'" style="cursor:pointer;">
+                                              <tr class="community_view" style="cursor:pointer;">
                                                 <th scope="row">1</th>
                                                 <td>게시물 제목 입니다. 1</td>
                                                 <td>황씨일가</td>
@@ -134,14 +131,14 @@
 
     <!-- JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="../lib/wow/wow.min.js"></script>
-    <script src="../lib/easing/easing.min.js"></script>
-    <script src="../lib/waypoints/waypoints.min.js"></script>
-    <script src="../lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="/lib/wow/wow.min.js"></script>
+    <script src="/lib/easing/easing.min.js"></script>
+    <script src="/lib/waypoints/waypoints.min.js"></script>
+    <script src="/lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="../js/main.js"></script>
-    <script src="../js/ajax_community.js"></script>
+    <script src="/js/main.js"></script>
+    <script src="/js/ajax_community.js"></script>
 </body>
 
 </html>

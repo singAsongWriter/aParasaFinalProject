@@ -13,6 +13,13 @@ public class CommunityController {
 		mv.setViewName("community/community_insert");
 		return mv;		
 	}
+	
+	@RequestMapping("/community/community_view")
+	public ModelAndView community_view() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("community/community_view");
+		return mv;		
+	}
 
 	
 	

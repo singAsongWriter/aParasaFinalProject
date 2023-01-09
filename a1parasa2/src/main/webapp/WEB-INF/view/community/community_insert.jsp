@@ -6,6 +6,7 @@
 <script src="/js/summernote/summernote-lite.js"></script>
 <script src="/js/summernote/lang/summernote-ko-KR.js"></script>
 <link rel="stylesheet" href="/css/summernote/summernote-lite.css">
+
 </head>
 <body>
 <!-- Contact Start -->
@@ -40,10 +41,11 @@
     		  height: 300,                 // 에디터 높이
     		  minHeight: null,             // 최소 높이
     		  maxHeight: null,             // 최대 높이
-    		  lang: "ko-KR",					
-              
+    		  lang: "ko-KR"              
     	});
     </script>
+    
+    <script src="js/index.js"></script>
     
 </body>
 </html>

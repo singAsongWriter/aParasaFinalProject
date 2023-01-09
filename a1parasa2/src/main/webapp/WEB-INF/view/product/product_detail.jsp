@@ -64,7 +64,7 @@
                         <input type = 'radio' name = 'sub_info' class="sub_info" value = "sub_info_1"/><label>&nbsp구독정보 2</label><br/>
                         <input type = 'radio' name = 'sub_info' class="sub_info" value = "sub_info_1"/><label>&nbsp구독정보 3</label><br/>
                         <a class="btn btn-primary py-3 px-5 mt-3 orderForm" href="#">구매하기</a>
-                        <a class="btn btn-primary py-3 px-5 mt-3" href="">장바구니</a>
+                        <a class="btn btn-primary py-3 px-5 mt-3 shoppingCart" href="#">장바구니</a>
                         <a class="btn btn-dark py-3 px-5 mt-3">이 상품의 파라셀러</a>
                     </div>
                     <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
@@ -88,8 +88,8 @@
                         <p><i class="fa fa-check text-primary me-3"></i>투명하되 청춘의 방황하여도, 반짝이는 남는 부패뿐이다. 가치를 이상을 얼마나 우는 관현악이며, </p>
                         <p><i class="fa fa-check text-primary me-3"></i>이상 어디 눈에 할지라도 새가 때문이다.</p>
                     </div>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="">구매하기</a>
-                    <a class="btn btn-primary py-3 px-5 mt-3" href="">구독하기</a>
+                    <a class="btn btn-primary py-3 px-5 mt-3 orderForm" href="#">구매하기</a>
+                    <a class="btn btn-primary py-3 px-5 mt-3 shoppingCart" href="#">장바구니</a>
                 </div>
             </div>
         </div>

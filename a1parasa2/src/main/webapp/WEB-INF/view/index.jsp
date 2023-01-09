@@ -45,8 +45,6 @@
 String inc="temp.jsp";
 if(request.getParameter("inc") != null){
    inc = request.getParameter("inc");
-   
-String sessionId = (String)session.getAttribute("sessionId");
 }
 %>
     <div class="container-xxl bg-white p-0">
@@ -76,27 +74,27 @@ String sessionId = (String)session.getAttribute("sessionId");
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle nav-product" data-bs-toggle="dropdown">상품</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="#" class="dropdown-item">원예</a>
-                                <a href="#" class="dropdown-item">의류</a>
-                                <a href="#" class="dropdown-item">잡화</a>
-                                <a href="#" class="dropdown-item">수집품</a>
-                                <a href="#" class="dropdown-item">도서</a>
-                                <a href="#" class="dropdown-item">구강/면도</a>
-                                <a href="#" class="dropdown-item">생리대/성인기저귀</a>
-                                <a href="#" class="dropdown-item">헤어</a>
-                                <a href="#" class="dropdown-item">메이크업</a>
-                                <a href="#" class="dropdown-item">임부용품</a>
-                                <a href="#" class="dropdown-item">이유용품/유아식기</a>
-                                <a href="#" class="dropdown-item">강아지사료</a>
-                                <a href="#" class="dropdown-item">채소</a>
-                                <a href="#" class="dropdown-item">반찬/간편식/대용식</a>
+                                <a href="#" class="dropdown-item btnSearch">원예</a>
+                                <a href="#" class="dropdown-item btnSearch">의류</a>
+                                <a href="#" class="dropdown-item btnSearch">잡화</a>
+                                <a href="#" class="dropdown-item btnSearch">수집품</a>
+                                <a href="#" class="dropdown-item btnSearch">도서</a>
+                                <a href="#" class="dropdown-item btnSearch">구강/면도</a>
+                                <a href="#" class="dropdown-item btnSearch">생리대/성인기저귀</a>
+                                <a href="#" class="dropdown-item btnSearch">헤어</a>
+                                <a href="#" class="dropdown-item btnSearch">메이크업</a>
+                                <a href="#" class="dropdown-item btnSearch">임부용품</a>
+                                <a href="#" class="dropdown-item btnSearch">이유용품/유아식기</a>
+                                <a href="#" class="dropdown-item btnSearch">강아지사료</a>
+                                <a href="#" class="dropdown-item btnSearch">채소</a>
+                                <a href="#" class="dropdown-item btnSearch">반찬/간편식/대용식</a>
                             </div>
                         </div>
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle nav-service" data-bs-toggle="dropdown">서비스</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                                <a href="#" class="dropdown-item">세탁</a>
-                                <a href="#" class="dropdown-item">코디</a>
+                                <a href="#" class="dropdown-item btnSearch">세탁</a>
+                                <a href="#" class="dropdown-item btnSearch">코디</a>
                             </div>
                         </div>
                         <a href="#" class="nav-item nav-link nav-community">커뮤니티</a>
@@ -143,19 +141,19 @@ String sessionId = (String)session.getAttribute("sessionId");
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Quick Links</h5>
-                        <a class="btn btn-link text-white-50" href="">상품</a>
-                        <a class="btn btn-link text-white-50" href="">서비스</a>
-                        <a class="btn btn-link text-white-50" href="">커뮤니티</a>
+                        <a class="btn btn-link text-white-50 btnSearch" href="#">상품</a>
+                        <a class="btn btn-link text-white-50 btnSearch" href="">서비스</a>
+                        <a class="btn btn-link text-white-50 nav-community" href="">커뮤니티</a>
                         <a class="btn btn-link text-white-50" href="">파라셀러 등록하기</a>
-                        <a class="btn btn-link text-white-50" href="">홈 화면</a>
+                        <a class="btn btn-link text-white-50" href="/">홈 화면</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Related Web</h5>
-                        <a class="btn btn-link text-white-50" href="">파라사 블로그</a>
-                        <a class="btn btn-link text-white-50" href="">파라사 포스트</a>
-                        <a class="btn btn-link text-white-50" href="">파라사 인스타그램</a>
-                        <a class="btn btn-link text-white-50" href="">파라사 유튜브</a>
-                        <a class="btn btn-link text-white-50" href="">파라사 페이스북</a>
+                        <a class="btn btn-link text-white-50" href="http://jobtc.tistory.com">파라사 블로그</a>
+                        <a class="btn btn-link text-white-50" href="https://news.mt.co.kr/mtview.php?no=2022101115073763457">파라사 포스트</a>
+                        <a class="btn btn-link text-white-50" href="https://www.instagram.com">파라사 인스타그램</a>
+                        <a class="btn btn-link text-white-50" href="https://www.youtube.com">파라사 유튜브</a>
+                        <a class="btn btn-link text-white-50" href="http://www.facebook.com">파라사 페이스북</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Newsletter</h5>
@@ -171,14 +169,14 @@ String sessionId = (String)session.getAttribute("sessionId");
                 <div class="copyright">
                     <div class="row">
                         <div class="col-md-6 text-center text-md-start mb-3 mb-md-0">
-                            &copy; <a class="border-bottom" href="#">PARASA</a>, All Right Reserved. 
+                            &copy; <a class="border-bottom" href="#">PARASA</a>, All Right Reserved.
 							
 							<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
                         </div>
                         <div class="col-md-6 text-center text-md-end">
                             <div class="footer-menu">
+                                <a href="">Contact With Our Hitman</a>
                                 <a href="/">Home</a>
-                                <a href="">Cookies</a>
                                 <a href="">Help</a>
                                 <a href="">FQAs</a>
                                 <a href="/admin/admin_index">Administration</a>
