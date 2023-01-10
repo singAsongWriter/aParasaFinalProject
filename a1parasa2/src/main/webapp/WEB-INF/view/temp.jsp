@@ -17,7 +17,7 @@
                    	 		<a href="#" class="btn btn-primary py-3 px-5 me-3 animated fadeIn nav-login">파라셀러 등록하기</a>               	 
                          </c:when>
 	   					 <c:otherwise>
-	                   	 	<a href="#" class="btn btn-primary py-3 px-5 me-3 animated fadeIn parasellerResgistration">파라셀러 등록하기</a>
+	                   	 	<a href="#" class="btn btn-primary py-3 px-5 me-3 animated fadeIn h_seller_profile_registration">파라셀러 등록하기</a>
 						 </c:otherwise>
 					 </c:choose>
                 </div>
@@ -80,7 +80,7 @@
         <!-- Category Start -->
         <div class="container-xxl py-5">
             <div class="container">
-                <div class="text-center mx-auto mb-5 wow fadeInUp btnSearch" data-wow-delay="0.1s" style="max-width: 600px;">
+                <div class="text-center mx-auto mb-5 wow fadeInUp" data-wow-delay="0.1s" style="max-width: 600px;">
                     <h1 class="mb-3">카테고리</h1>
                     <!-- <p>Eirmod sed ipsum dolor sit rebum labore magna erat. Tempor ut dolore lorem kasd vero ipsum sit eirmod sit. Ipsum diam justo sed rebum vero dolor duo.</p>
                  --></div>
@@ -712,8 +712,8 @@
                                     <h1 class="mb-3">고객의 소리 새겨듣겠습니다.</h1>
                                     <p>자주 묻는 질문을 확인해주시고, 고객 문의 게시판을 통해 고객센터에 질문해주시면, 성심성의껏 고객의 소리 새겨듣겠습니다.</p>
                                 </div>
-                                <a href="" class="btn btn-primary py-3 px-4 me-2"><!-- <i class="fa fa-phone-alt me-2"></i> -->고객 문의 게시판</a>
-                                <a href="" class="btn btn-dark py-3 px-4"><!-- <i class="fa fa-calendar-alt me-2"></i> -->자주 묻는 질문과 답</a>
+                                <a href="#" class="btn btn-primary py-3 px-4 me-2 nav-community"><!-- <i class="fa fa-phone-alt me-2"></i> -->고객 문의 게시판</a>
+                                <a href="#" class="btn btn-dark py-3 px-4 nav-community"><!-- <i class="fa fa-calendar-alt me-2"></i> -->자주 묻는 질문과 답</a>
                             </div>
                         </div>
                     </div>
@@ -732,6 +732,7 @@
     
 	    <!-- Template JavaScript -->
 	    <script src="js/index.js"></script>
+	    
 </body>
 
 </html>

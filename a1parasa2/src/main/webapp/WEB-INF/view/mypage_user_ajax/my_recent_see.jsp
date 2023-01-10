@@ -88,7 +88,7 @@
 										    <li class="page-item"><a class="page-link" href="#">2</a></li>
 										    <li class="page-item"><a class="page-link" href="#">3</a></li>
 										    <li class="page-item">
-										      <a class="page-link" href="#">Next</a>
+										      <a class="page-link" href="#" onload="scroll(0,0)">Next</a>
 										    </li>
 										  </ul>
 										</nav>
@@ -133,9 +133,6 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/index.js"></script>
-    <script src="js/ajax_login.js"></script>
     <script src="js/ajax_mypage_user.js"></script>
 </body>
 </html>

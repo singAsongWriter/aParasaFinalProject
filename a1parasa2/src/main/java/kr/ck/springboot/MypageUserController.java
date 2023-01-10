@@ -132,4 +132,26 @@ public class MypageUserController {
 		return mv;
 	}	
 	
+	/* 유저 및 파라셀러 정보 변경 및 등록 */
+	@RequestMapping("/mypage_user_ajax/user_profile_update")
+	public ModelAndView user_profile_update() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("mypage_user_ajax/user_profile_update");
+		return mv;
+	}
+	
+	@RequestMapping("/mypage_paraseller_ajax/h_seller_profile")
+	public ModelAndView h_seller_profile() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("mypage_paraseller_ajax/h_seller_profile");
+		return mv;
+	}
+	
+	@RequestMapping("/mypage_user_ajax/h_seller_profile_registration")
+	public ModelAndView h_seller_profile_registration() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("mypage_user_ajax/h_seller_profile_registration");
+		return mv;
+	}
+	
 }

@@ -10,8 +10,6 @@
     <!-- Bootstrap Core CSS -->
     <link href="./css/bootstraps.min.css" rel="stylesheet">
     <!-- Custom CSS -->
-    <link href="./css/user_profile_update.css" rel="stylesheet">
-    <script defer src='js/user_profile_update.js'></script>
 </head>
 
 <body>
@@ -20,64 +18,73 @@
             <div class="container-fluid">
                 <div class="row">
                     <!-- Column -->
-                    <div class="col-lg-8 col-xlg-9 col-md-7">
+                    
+                    <div class="col-lg-12 col-xlg-9 col-md-7">
                         <div class="card">
                             <div class="card-block">
                             	<div class="form-group">
-                                	<label class="col-md-12">이름</label>
+                                	<label class="col-md-12">닉네임</label>
                                 	<div class="col-md-12">
                                     	<input type="text" class="form-control form-control-line">
                                     </div>
                                 </div>
-                                
                                 <div class="form-group">
-                                	<label for="example-email" class="col-md-12">닉네임</label>
+                                	<label for="example-email" class="col-md-12">지역</label>
 	                                <div class="col-md-12">
 	                                	<input type="text" class="form-control form-control-line" id="region">
 	                                </div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-md-12">전화번호</label>
+                                	<label class="col-sm-12">상품 구분</label>
+                                    <div class="col-sm-12">
+                                    	<select class="form-control form-control-line">
+                                        	<option>상품</option>
+                                        	<option>서비스</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                	<label class="col-md-12">카테고리</label>
+                                    <div class="col-md-12">
+                                    	<select class="form-control form-control-line">
+                                        	<option>원예</option>
+                                        	<option>의류</option>
+                                        	<option>잡화</option>
+                                        	<option>수집품</option>
+                                        	<option>도서</option>
+                                        	<option>구강/면도</option>
+                                        	<option>생리대/성인기저귀</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                	<label class="col-md-12">경력</label>
                                     <div class="col-md-12">
                                     	<input type="text" class="form-control form-control-line">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-md-12">성별</label>
+                                	<label class="col-md-12">학교</label>
                                     <div class="col-md-12">
-                                    	<div class="form-check form-check-inline">
-										  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-										  <label class="form-check-label" for="inlineRadio1">남성</label>
-										</div>
-										<div class="form-check form-check-inline">
-										  <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-										  <label class="form-check-label" for="inlineRadio2">여성</label>
-										</div>
+                                    	<input type="text" class="form-control form-control-line">
                                     </div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-md-12">생년월일</label>
+                                	<label class="col-md-12">자격증</label>
                                     <div class="col-md-12">
-                                    	<input type="date" data-role="calendarpicker"
-									    data-input-format="%d/%m/%y" value="21/12/1972">
-									</div>
+                                    	<input type="text" class="form-control form-control-line">
+                                    </div>
                                 </div>
                                 <div class="form-group">
-                                	<label class="col-md-12">변경할 비밀번호</label>
+                                	<label class="col-md-12">소개</label>
                                 	<div class="col-md-12">
-                                    	<input type="text" class="form-control form-control-line">
-                                    </div>
-                                </div>
-                                <div class="form-group">
-                                	<label class="col-md-12">비밀번호 확인</label>
-                                	<div class="col-md-12">
-                                    	<input type="text" class="form-control form-control-line">
-                                    </div>
+                                		<textarea rows="5" class="form-control form-control-line"></textarea>
+                                	</div>
                                 </div>
                                 <div class="form-group">
                                 	<div class="col-sm-12">
                                     	<button class="btn btn-success">수정하기</button>
-                                    	<button class="btn btn-success">회원탈퇴</button>
+                                    	<button class="btn btn-success">취소하기</button>
                                     </div>
                                 </div>
                             </div>

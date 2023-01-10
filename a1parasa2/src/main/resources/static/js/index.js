@@ -40,17 +40,22 @@ $('.find_password').on('click', function(){
 /* 마이페이지 */
 $('.mypage_user').on('click', function(){
 	$('#section').load('/mypage_user');
+	window.scrollTo(0, 0);
 });
 
 /* 쇼핑 카트 */
 $('.shoppingCart').on('click', function(){
 	$('#section').load('/product/shoppingCart');
+	window.scrollTo(0, 0);
 });
 
 
 
 
 
-
+$('.h_seller_profile_registration').on('click', function(){
+	$('#section').load('/mypage_user_ajax/h_seller_profile_registration');
+	window.scrollTo(0, 0);
+});
 
 
