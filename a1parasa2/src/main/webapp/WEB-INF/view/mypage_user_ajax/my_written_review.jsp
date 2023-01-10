@@ -80,7 +80,7 @@
 										    <li class="page-item"><a class="page-link" href="#">2</a></li>
 										    <li class="page-item"><a class="page-link" href="#">3</a></li>
 										    <li class="page-item">
-										      <a class="page-link" href="#" onload="scroll(0,0)">Next</a>
+										      <a class="page-link" href="#">Next</a>
 										    </li>
 										  </ul>
 										</nav>
@@ -109,6 +109,7 @@
 
        
     </div>
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -116,7 +117,11 @@
     <script src="lib/easing/easing.min.js"></script>
     <script src="lib/waypoints/waypoints.min.js"></script>
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
     <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/ajax_login.js"></script>
     <script src="js/ajax_mypage_user.js"></script>
 </body>
 </html>

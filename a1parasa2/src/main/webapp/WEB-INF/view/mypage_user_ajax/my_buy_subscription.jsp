@@ -80,7 +80,7 @@
                                                 </div>
                                                 <div class="col-lg-3 row  border  border-success border-bottom-0 border-top-0 border-end-0">
                                                     <button type="button" class="mb-3 btn btn-primary">배송조회</button>
-                                                    <button type="button" class="mb-3 btn btn-primary" onload="scroll(0,0)">교환,반품 신청</button>
+                                                    <button type="button" class="mb-3 btn btn-primary">교환,반품 신청</button>
                                                 </div>
                                         </div>
                                        
@@ -107,6 +107,13 @@
         <!-- Contact End -->
 
 
+        <!-- Footer Start -->
+        
+        <!-- Footer End -->
+
+
+    </div>
+
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
@@ -116,6 +123,9 @@
     <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/ajax_login.js"></script>
     <script src="js/ajax_mypage_user.js"></script>
 </body>
 

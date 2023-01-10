@@ -45,7 +45,8 @@ if(request.getParameter("incc") != null){
 	                         <div class = "u1 my_sell_profit">수익관리</div>
 	                         <div class = "u1 my_sell_ad_management">광고관리</div>
 	                         <div class = "u1 my_sell_coupon">쿠폰관리</div>
-	                         <div class = "u1 nav-community">상품 Q&A</div>
+	                         <div class = "u1">상품 Q&A</div>
+	                         <div class = "u1">메시지</div>
 	                    </div>
                     </div>
                     
@@ -67,15 +68,8 @@ if(request.getParameter("incc") != null){
     
     <!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-
+    
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/ajax_mypage_user.js"></script>
 </body>
 

@@ -118,7 +118,7 @@ if(request.getParameter("inc") != null){
         <!-- Navbar End -->
         
         <!-- AJAX START -->
-    	<div id = "section" class = "temp" >
+    	<div id = "section" class = "temp">
     		<jsp:include page = "<%=inc%>"/>
     	</div>
     	<!-- AJAX END -->
@@ -142,9 +142,9 @@ if(request.getParameter("inc") != null){
                     <div class="col-lg-3 col-md-6">
                         <h5 class="text-white mb-4">Quick Links</h5>
                         <a class="btn btn-link text-white-50 btnSearch" href="#">상품</a>
-                        <a class="btn btn-link text-white-50 btnSearch" href="#">서비스</a>
-                        <a class="btn btn-link text-white-50 nav-community" href="#">커뮤니티</a>
-                        <a class="btn btn-link text-white-50" href="#">파라셀러 등록하기</a>
+                        <a class="btn btn-link text-white-50 btnSearch" href="">서비스</a>
+                        <a class="btn btn-link text-white-50 nav-community" href="">커뮤니티</a>
+                        <a class="btn btn-link text-white-50" href="">파라셀러 등록하기</a>
                         <a class="btn btn-link text-white-50" href="/">홈 화면</a>
                     </div>
                     <div class="col-lg-3 col-md-6">
@@ -205,7 +205,8 @@ if(request.getParameter("inc") != null){
     <script src="js/main.js"></script>
     <script src="js/index.js"></script>
     <script src="js/ajax_login.js"></script>
-
+    
+    
 </body>
 
 </html>

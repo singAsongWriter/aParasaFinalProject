@@ -41,8 +41,9 @@
     });
     
     //Ajax go to top
-    $(document).ready(function () {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+    $(window).ready(function () {
+        $('html, body').animate({scrollTop: 0}, 150, 'easeInOutExpo');
+        return false;
     });
 
     // Header carousel

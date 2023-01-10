@@ -82,7 +82,7 @@
 									</div>
                                 </div>
                                 <div class="mt-5 col-md-6">
-									<button class="btn btn-primary profile-button mypage_modify_button_paraseller" type="button">수정하기</button>
+									<button class="btn btn-primary profile-button mypage_modify_button" type="button">수정하기</button>
 								</div>
                                 
                             </div>

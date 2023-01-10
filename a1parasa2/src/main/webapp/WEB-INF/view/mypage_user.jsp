@@ -87,7 +87,7 @@ if(request.getParameter("incc") != null){
 	                         <div class = "u1 my_favorite">셀러즐겨찾기</div>
 	                         <div class = "u1 my_possible_review">작성가능리뷰</div>
 	                         <div class = "u1 my_written_review">작성한리뷰</div>
-	                         <div class = "u1 nav-community">Q&A</div>
+	                         <div class = "u1">Q&A</div>
 	                    </div>
                     </div>
                     
@@ -107,15 +107,8 @@ if(request.getParameter("incc") != null){
 
 	<!-- JavaScript Libraries -->
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    <script src="lib/waypoints/waypoints.min.js"></script>
-    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
 
     <!-- Template Javascript -->
-    <script src="js/main.js"></script>
-    <script src="js/index.js"></script>
     <script src="js/ajax_mypage_user.js"></script>
   
 </body>

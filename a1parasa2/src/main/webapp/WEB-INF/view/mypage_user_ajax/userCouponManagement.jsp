@@ -96,7 +96,7 @@
                                     <div class="position-relative overflow-hidden">
                                     	<img class="img-fluid" src="img/property-1.jpg" alt="">
                                     </div>
-                                    <div class="p-4 pb-0" >
+                                    <div class="p-4 pb-0">
                                         <h5 class="text-primary mb-3 ">\4,000 할인</h5>
                                         <span class="d-block h5 mb-2">상품명을 입력해주세요.</span>
                                         <span class="d-block mb-2">할인기간</span>
@@ -109,9 +109,6 @@
                 </div>
             </div>
         </div>
-        <button onload="scrollToTop()">
-        Click to scroll to top
-    </button>
         <!-- Property List End -->
         
         <!-- JavaScript Libraries -->
@@ -121,8 +118,11 @@
 	    <script src="lib/easing/easing.min.js"></script>
 	    <script src="lib/waypoints/waypoints.min.js"></script>
 	    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
-		
+	
 	    <!-- Template Javascript -->
+	    <script src="js/main.js"></script>
+	    <script src="js/index.js"></script>
+	    <script src="js/ajax_login.js"></script>
 	    <script src="js/ajax_mypage_user.js"></script>
 </body>
 
