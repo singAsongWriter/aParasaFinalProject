@@ -3,10 +3,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-<head>
-
-</head>
-
 <body>
     <div id="main-wrapper">
         <div class="page-wrapper">
@@ -15,22 +11,30 @@
                     <!-- Column -->
                     <div class="col-lg-8 col-xlg-9 col-md-7">
                         <br><br>
+                            <form class="frm" method="post">
                         <div class="card">
                             <div class="card-block">
+                            
+                            	<c:forEach var='vo' items='${list2}'>
+                            	
                             	<div class="form-group">
-                            	<br>
+                                <br>
                                 	<h4 class="col-md-12 u_profile_h4">닉네임</h4>
                                 	<br>
-                                	<div class="col-md-12 u_profile_div">
-                                    	<span >섹시도건</span>
-                                    </div>
+	                                <div class="col-md-12 u_profile_div">
+	                                	<span >${vo.nickname}</span>
+	                                </div>
                                 </div>
+                            	 
+                                </c:forEach> 
+                                
+                            	<c:forEach var='vo' items='${list}'>                            	
                                 <div class="form-group">
                                 <br>
                                 	<h4 class="col-md-12 u_profile_h4">지역</h4>
                                 	<br>
 	                                <div class="col-md-12 u_profile_div">
-	                                	<span >개성</span>
+	                                	<span >${vo.region}</span>
 	                                </div>
                                 </div>
                                 <div class="form-group">
@@ -38,7 +42,7 @@
                                 	<h4 class="col-md-12 u_profile_h4">상품구분</h4>
                                     <br>
                                     <div class="col-md-12 u_profile_div">
-                                    	<span >상품</span>
+                                    	<span >${vo.sales_area}</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -46,7 +50,7 @@
                                 	<h4 class="col-md-12 u_profile_h4">카테고리</h4>
                                     <br>
                                     <div class="col-md-12 u_profile_div">
-                                    	<span >원예</span>
+                                    	<span >${vo.cat1}, ${vo.cat2}, ${vo.cat3}</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -54,7 +58,7 @@
                                 	<h4 class="col-md-12 u_profile_h4">경력</h4>
                                     <br>
                                     <div class="col-md-12 u_profile_div">
-                                    	<span >5년</span>
+                                    	<span >${vo.career}</span>
 									</div>
                                 </div>
                                 <div class="form-group">
@@ -62,7 +66,7 @@
                                 	<h4 class="col-md-12 u_profile_h4">학교</h4>
                                     <br>
                                     <div class="col-md-12 u_profile_div">
-                                    	<span >김일성종합대학</span>
+                                    	<span >${vo.school}</span>
 									</div>
                                 </div>
                                 <div class="form-group">
@@ -70,7 +74,7 @@
                                 	<h4 class="col-md-12 u_profile_h4">자격증</h4>
                                     <br>
                                     <div class="col-md-12 u_profile_div">
-                                    	<span >無</span>
+                                    	<span >${vo.license}</span>
 									</div>
                                 </div>
                                 <div class="form-group">
@@ -78,15 +82,19 @@
                                 	<h4 class="col-md-12 u_profile_h4">소개</h4>
                                     <br>
                                     <div class="col-md-12 u_profile_div">
-                                    	<span >안녕하세요? 꽃에 미친 남자, 꽃미남 입니다.</span>
+                                    	<span >${vo.introduction}</span>
 									</div>
                                 </div>
-                                <div class="mt-5 col-md-6">
-									<button class="btn btn-primary profile-button mypage_modify_button_paraseller" type="button">수정하기</button>
-								</div>
+                                </c:forEach>
                                 
+                                <div class="mt-5 col-md-6">
+									<a href="#" class="btn btn-primary profile-button mypage_modify_button_paraseller">수정하기</a>
+								</div>
+								
+								<input type="text" name="login_id" value="${signIn.login_id}">
                             </div>
                         </div>
+                                </form>
                     </div>
                 </div>
             </div>

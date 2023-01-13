@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.ck.springboot.mybatis.MemberMapper">
+	<insert id="insert" parameterType="kr.ck.springboot.member.MemberVo">
+		insert into user(login_id, email, password, create_at, updated_at) 
+		values (#{login_id}, #{email}, #{password}, now(), now())
+	</insert>
+	
+	<insert id="insert_paraseller" parameterType="kr.ck.springboot.member.MemberVo">
+		insert into supplier(supplier_id)
+		values (#{login_id})
+	</insert>
+	
+	<update id="insertExtra" parameterType="kr.ck.springboot.member.MemberVo">
+		update user set name = #{name}, nickname = #{nickname}, phone_number = #{phone_number}, 
+		gender=#{gender}, birth=#{birth}, updated_at = now() where login_id='${login_id}'
+	</update>
+	
+	<update id="h_seller_profile_modifyR" parameterType="kr.ck.springboot.member.MemberVo">
+		update supplier set introduction=#{introduction}, region=#{region}, 
+			sales_area=#{sales_area}, cat1=#{cat1}, cat2=#{cat2}, cat3=#{cat3}, 
+			career=#{career}, school=#{school}, license=#{license}
+		where supplier_id = '${login_id}'
+	</update>
+	
+	<select id = 'selectUserInfo' parameterType="String" resultType = 'kr.ck.springboot.member.MemberVo'>
+		select * from user 
+		where login_id='${login_id}'
+	</select>
+	
+	<select id = 'selectParasellerInfo' parameterType="String" resultType = 'kr.ck.springboot.member.MemberVo'>
+		select * from supplier
+		where supplier_id='${login_id}'
+	</select>
+</mapper>

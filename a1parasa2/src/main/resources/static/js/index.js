@@ -1,18 +1,20 @@
-
 /* 커뮤니티 */
 $('.nav-community').on('click', function(){
 	$('#section').load('/community/community_list');
 });
 
-
 /* 상품 디테일 */
-$('.product_detail').on('click', function(){
-	$('#section').load('/product/product_detail');	
-});
+function product_detail(sr_id){
+  	 $.post("/product/product_detail",{id : sr_id}, function(data) 
+    { 
+      $("#section").html(data);
+    });
+  	 window.scrollTo(0, 0);
+};
 
 /* 로그인 페이지 */
 $('.nav-login').on('click', function(){
-	$('#section').load('/member/login');	
+	$('#section').load('/member/login');
 });
 
 /* 회원가입 페이지 */
@@ -25,8 +27,21 @@ $('.nav-registration').on('click', function(){
 
 /* 검색 */
 $('.btnSearch').on('click', function(){
-	$('#section').load('/product/product_list');
+	 let frm = $('.frm')[0];     
+  	 let param = $(frm).serialize();
+  	 
+  	 console.log(param);
+  	 $('#section').load('/product/product_list', param);
+  	 window.scrollTo(0, 0);
 });
+
+function category_search(sr_id){
+  	 $.post("/product/product_list",{search : sr_id}, function(data) 
+    { 
+      $("#section").html(data);
+    });
+  	 window.scrollTo(0, 0);
+};
 
 /* 아이디 찾기, 비밀번호 찾기 */
 $('.find_id').on('click', function(){
@@ -48,10 +63,6 @@ $('.shoppingCart').on('click', function(){
 	$('#section').load('/product/shoppingCart');
 	window.scrollTo(0, 0);
 });
-
-
-
-
 
 $('.h_seller_profile_registration').on('click', function(){
 	$('#section').load('/mypage_user_ajax/h_seller_profile_registration');

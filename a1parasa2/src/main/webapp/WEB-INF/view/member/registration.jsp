@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
     <title>파라사 - 마법처럼 돈이 쏟아지는 구독 플랫폼, 파는 사람도 사는 사람도 잔뜩 받은 감동에 모두가 마음 따뜻합니다.</title>
     
     <style>
@@ -22,15 +22,15 @@
        <div class = 'sign-logo'>
           <h1 class="m-0">회원가입</h1>       
        </div>   
-        <form>
-            <input type="text" name="id" class="sign_input_text" placeholder="ID"><br>
+        <form action="${cpath}/registration.do" method="post">
+            <input type="text" name="login_id" class="sign_input_text" placeholder="ID"><br>
             <input type="text" name="email" class="sign_input_text" placeholder="Email"><br>
             <input type="password" name="password" class="sign_input_text" placeholder="비밀번호"><br>
-            <input type="password" name="password" class="sign_input_text" placeholder="비밀번호 확인"><br>
+            <input type="password" name="password_check" class="sign_input_text" placeholder="비밀번호 확인"><br>
             <div class="wthree-text">
             
             	<label class='anim'>
-            		<input type='checkbox' class='checkbox' required="">
+            		<input type='checkbox' class='checkbox' required>
             		<span>이용약관에 동의합니다.</span>
             	</label>
             	<div class='clear'> </div>

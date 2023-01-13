@@ -3,64 +3,59 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <!-- My Page CSS -->
     <link href="css/mypage.css" rel="stylesheet">
 </head>
-
 <body>
-
 <%
 String incc="temp_mypage.jsp";
 if(request.getParameter("incc") != null){
    incc = request.getParameter("incc");
 }
 %>
-
     <div class="container-xxl bg-white p-0">
         
         <!-- Search Start -->
         <div class="container-fluid bg-primary mb-5 wow fadeIn" data-wow-delay="0.1s" style="padding: 35px;">
             <div class="container">
-                <div class="row g-2">
+
+             
+        <form name="frm">
+                <div class="row g-2">                
                     <div class="col-md-10">
                         <div class="row g-2">
-                            <div class="col-md-4">
-                                <input type="text" class="form-control border-0 py-3" placeholder="상품명 혹은 서비스명을 입력해주세요.">
+                            <div class="col-md-8">
+                                <input name="findStrSearch" type="text" class="form-control border-0 py-3" placeholder="상품명 혹은 서비스명을 입력해주세요.">
                             </div>
                             <div class="col-md-4">
-                                <select class="form-select border-0 py-3">
+                                <select name="search_category" id="search_category" class="form-select border-0 py-3">
                                     <option selected>대분류</option>
-                                    <option value="1">홈인테리어</option>
-                                    <option value="2">남성패션</option>
-                                    <option value="3">여성패션</option>
-                                    <option value="4">완구/취미</option>
-                                    <option value="5">도서/음반/DVD</option>
-                                    <option value="6">생활</option>
-                                    <option value="7">뷰티</option>
-                                    <option value="8">출산/육아</option>
-                                    <option value="9">반려동물</option>
-                                    <option value="10">식품</option>
+                                    <option>홈인테리어</option>
+                                    <option>남성패션</option>
+                                    <option>여성패션</option>
+                                    <option>완구/취미</option>
+                                    <option>도서/음반/DVD</option>
+                                    <option>생활</option>
+                                    <option>뷰티</option>
+                                    <option>출산/육아</option>
+                                    <option>반려동물</option>
+                                    <option>식품</option>
                                 </select>
-                            </div>
-                            <div class="col-md-4">
-                                <select class="form-select border-0 py-3">
-                                    <option selected>소분류</option>
-                                    <option value="1">Temporary 1</option>
-                                    <option value="2">Temporary 2</option>
-                                    <option value="3">Temporary 3</option>
-                                </select>
-                            </div>
+                            </div>                            
                         </div>
                     </div>
+                    
                     <div class="col-md-2">
-                        <button class="btn btn-dark border-0 w-100 py-3 btnSearch">검색하기</button>
+                    <a href="#" class="btn btn-dark border-0 w-100 py-3 btnSearch">검색하기</a>                    
                     </div>
                 </div>
+                    </form>
+        
             </div>
         </div>
-        <!-- Search End -->  
+                
+        <!-- Search End -->
         
         <!-- About Start -->
         <div class="container-xxl py-5">
@@ -77,7 +72,7 @@ if(request.getParameter("incc") != null){
                             </div>
                         </div>
                         <div class = 'mypage_menu'>
-                        	 <a class="btn btn-dark py-3 px-5 mt-3 u1 temp_mypage_conversion">셀러 전환</a>
+                        	 <a class="btn btn-dark py-3 px-5 mt-3 u1 temp_mypage_conversion temp_mypage_paraseller">셀러 전환</a>
 	                         <div class = "u1 temp_mypage" >마이 파라사</div>
 	                         <div class = "u1 my_buy_subscription">구매/구독관리</div>
 	                         <div class = "u1 userCouponManagement">쿠폰</div>

@@ -45,9 +45,9 @@
                     <div class="col-md-9">
                         <div class="row g-2">
                             <div class="col-md-12">
-                            <form class="frm">
+                            
                                 <input name="search" type="text" class="form-control border-0 py-3" placeholder="상품명 혹은 서비스명을 입력해주세요.">
-                            </form>                            
+                            
                             </div>                                            
                         </div>
                     </div>

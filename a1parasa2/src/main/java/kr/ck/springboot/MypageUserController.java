@@ -1,18 +1,34 @@
 package kr.ck.springboot;
 
+import java.util.List;
+
+
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
+import kr.ck.springboot.member.MemberDao;
+import kr.ck.springboot.member.MemberVo;
+
 @Controller
 public class MypageUserController {
 	
+	@Autowired
+	MemberDao dao;
+	
 	/* 유저 */
 	@RequestMapping("/temp_mypage")
-	public ModelAndView temp_mypage() {
+	public ModelAndView temp_mypage(String login_id) {
+		
 		ModelAndView mv = new ModelAndView();
+		List<MemberVo> list = dao.selectUserInfo(login_id);
+		
+		mv.addObject("list", list);
 		mv.setViewName("temp_mypage");
-		return mv;		
+		
+		return mv;
+		
 	}
 	
 	@RequestMapping("/mypage_user_ajax/my_dibs")
@@ -57,12 +73,15 @@ public class MypageUserController {
 		return mv;		
 	}
 	
-	@RequestMapping("/mypage_user_ajax/userCouponManagement")
-	public ModelAndView userCouponManagement() {
+	@RequestMapping("/mypage_user_ajax/mypage_modify_buttonR")
+	public ModelAndView mypage_modify_buttonR(MemberVo vo) {
 		ModelAndView mv = new ModelAndView();
-		mv.setViewName("mypage_user_ajax/userCouponManagement");
+		dao.insertExtra(vo);
+		mv.setViewName("/temp_mypage");
 		return mv;		
-	}	
+	}
+	
+	
 	
 	/* 파라셀러 */
 	@RequestMapping("/mypage_paraseller_ajax/my_sell_coupon")
@@ -90,7 +109,7 @@ public class MypageUserController {
 	public ModelAndView my_sell_ad_registration() {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("mypage_paraseller_ajax/my_sell_ad_registration");
-		return mv;		
+		return mv;
 	}
 	
 	/* 상품 등록 */
@@ -101,13 +120,29 @@ public class MypageUserController {
 		return mv;		
 	}
 	
-	/* 기타 */
-	
-	
+	/* 기타 */	
 	@RequestMapping("/temp_mypage_paraseller")
-	public ModelAndView temp_mypage_paraseller() {
+	public ModelAndView temp_mypage_paraseller(String login_id) {
 		ModelAndView mv = new ModelAndView();
+		
+		List<MemberVo> list = dao.selectParasellerInfo(login_id);
+		List<MemberVo> list2 = dao.selectUserInfo(login_id);
+		
+		mv.addObject("list", list);
+		mv.addObject("list2", list2);
+		
 		mv.setViewName("temp_mypage_paraseller");
+		
+		return mv;
+	}
+	
+	
+	
+	@RequestMapping("/mypage_user_ajax/h_seller_profile_modifyR")
+	public ModelAndView h_seller_profile_modifyR(MemberVo vo) {
+		ModelAndView mv = new ModelAndView();
+		dao.h_seller_profile_modifyR(vo);
+		mv.setViewName("/temp_mypage_paraseller");
 		return mv;		
 	}
 	
@@ -152,6 +187,13 @@ public class MypageUserController {
 		ModelAndView mv = new ModelAndView();
 		mv.setViewName("mypage_user_ajax/h_seller_profile_registration");
 		return mv;
+	}
+	
+	@RequestMapping("/mypage_user_ajax/userCouponManagement")
+	public ModelAndView userCouponManagement() {
+		ModelAndView mv = new ModelAndView();
+		mv.setViewName("mypage_user_ajax/userCouponManagement");
+		return mv;		
 	}
 	
 }

@@ -1,11 +1,14 @@
 /**
- * 	마이페이지 유저-파라셀러 모두 여기에
+ * 	마이페이지 유저 - 파라셀러 모두 여기에
  */
 
 /* 유저 탭 */
 $('.temp_mypage').on('click', function(){
-	$('#double_section').load('/temp_mypage');
-	window.scrollTo(0, 0);
+  	 let frm = $('.frm')[0];
+  	 let param = $(frm).serialize();
+  	 console.log(param);
+  	 $('#double_section').load('/temp_mypage', param);
+  	 window.scrollTo(0, 0);
 });
 
 $('.my_buy_subscription').on('click', function(){
@@ -50,8 +53,10 @@ $('.userCouponManagement').on('click', function(){
 
 /* 파라셀러 탭 */
 $('.temp_mypage_paraseller').on('click', function(){
-	$('#double_section').load('/temp_mypage_paraseller');
-	window.scrollTo(0, 0);
+	let frm = $('.frm')[0];
+  	 let param = $(frm).serialize();
+  	 $('#double_section').load('/temp_mypage_paraseller', param);	 
+  	 window.scrollTo(0, 0); 
 });
 
 $('.my_sell_subscription').on('click', function(){
@@ -100,7 +105,29 @@ $('.productRegistration').on('click', function(){
 
 /* 유저 및 파라셀러 정보 변경 (update) */
 $('.mypage_modify_button').on('click', function(){
-	$('#double_section').load('/mypage_user_ajax/user_profile_update');
+	$('#double_section').load('/mypage_user_ajax/user_profile_update');	
+	window.scrollTo(0, 0);
+});
+
+$('.mypage_modify_buttonR').on('click', function(){
+	
+	var frm = $('.frm')[0];
+    var param = new FormData(frm);
+   
+    $.ajax({
+        type : 'POST',
+        url : '/mypage_user_ajax/mypage_modify_buttonR',
+        contentType : false,
+        processData : false,
+        data : param,
+        dataType : 'html',
+        success : function(data){
+			if(data != '') alert("수정이 완료되었읍니다.");
+			frm.enctype='';
+			param = $(frm).serialize();
+            $('#double_section').load('/temp_mypage', param);
+        }
+    })
 	window.scrollTo(0, 0);
 });
 
@@ -109,5 +136,24 @@ $('.mypage_modify_button_paraseller').on('click', function(){
 	window.scrollTo(0, 0);
 });
 
-
+$('.h_seller_profile_modifyR').on('click', function(){
+	
+	var frm = $('.frm')[0];
+    var param = new FormData(frm);
+   
+    $.ajax({
+        type : 'POST',
+        url : '/mypage_user_ajax/h_seller_profile_modifyR',
+        contentType : false,
+        processData : false,
+        data : param,
+        dataType : 'html',
+        success : function(data){
+			if(data != '') alert("수정이 완료되었읍니다.");
+			frm.enctype='';
+			param = $(frm).serialize();
+            $('#double_section').load('temp_mypage_paraseller', param);
+        }
+    })
+});
 

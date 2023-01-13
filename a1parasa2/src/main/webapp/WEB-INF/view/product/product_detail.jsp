@@ -51,46 +51,41 @@
         <!-- About Start -->
         <div class="container-xxl py-5">
             <div class="container">
+            <c:forEach var='vo' items='${list }'>
                 <div class="row g-5 align-items-center">
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.1s">
                         <div class="about-img position-relative overflow-hidden p-5 pe-0">
                             <img class="img-fluid w-100" src="../img/about.jpg">
                         </div>
                     </div>
+                    
                     <div class="col-lg-6 wow fadeIn" data-wow-delay="0.5s">
-                        <h1 class="mb-4">상품명을 입력합니다.</h1>
-                        <p class="mb-4">가야 할 때가 언제인가를 분명히 알고 가는 이의 뒷모습은 얼마나 아름다운가. 봄 한 철 격정을 인내한 나의 사랑은 지고 있다. 분분한 낙화.</p>
-                        <input type = 'radio' name = 'sub_info' class="sub_info" value = "sub_info_1"/><label>&nbsp구독정보 1</label><br/>
+                        <h1 class="mb-4">${vo.name}</h1>
+                        <p class="mb-4">${vo.contents }</p>
+                        <!-- <input type = 'radio' name = 'sub_info' class="sub_info" value = "sub_info_1"/><label>&nbsp구독정보 1</label><br/>
                         <input type = 'radio' name = 'sub_info' class="sub_info" value = "sub_info_1"/><label>&nbsp구독정보 2</label><br/>
-                        <input type = 'radio' name = 'sub_info' class="sub_info" value = "sub_info_1"/><label>&nbsp구독정보 3</label><br/>
+                        <input type = 'radio' name = 'sub_info' class="sub_info" value = "sub_info_1"/><label>&nbsp구독정보 3</label><br/> -->
                         <a class="btn btn-primary py-3 px-5 mt-3 orderForm" href="#">구매하기</a>
                         <a class="btn btn-primary py-3 px-5 mt-3 shoppingCart" href="#">장바구니</a>
                         <a class="btn btn-dark py-3 px-5 mt-3">이 상품의 파라셀러</a>
                     </div>
                     <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
                         <h1 class="mb-4">상품 상세</h1>
-                        <p class="mb-4">맺어, 열매를 충분히 것은 살았으며, 이상을 인간은 그들을 유소년에게서 황금시대다. 노년에게서 때까지 위하여 이상의 물방아 이상 것이다. 붙잡아 뛰노는 우리 밥을 넣는 철환하였는가? 수 피가 꽃이 이상 이것이다. 그러므로 일월과 할지라도 작고 찬미를 내는 얼음과 위하여서. 이성은 영원히 싸인 크고 것이다. 꽃 청춘의 사람은 피고, 끝에 것이다. 영원히 대중을 어디 아니다. 힘차게 소담스러운 몸이 평화스러운 철환하였는가? 착목한는 긴지라 심장의 못할 남는 밝은 철환하였는가? 위하여서, 예수는 대중을 황금시대의 구할 평화스러운 못하다 인생에 보배를 사막이다.</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>찬미를 기쁘며, 눈이 앞이 피는 모래뿐일 옷을 칼이다. 날카로우나 봄바람이다. </p>
-                        <p><i class="fa fa-check text-primary me-3"></i>투명하되 청춘의 방황하여도, 반짝이는 남는 부패뿐이다. 가치를 이상을 얼마나 우는 관현악이며, </p>
-                        <p><i class="fa fa-check text-primary me-3"></i>이상 어디 눈에 할지라도 새가 때문이다.</p>
+                        <p class="mb-4">${vo.product_detail}</p>
                     </div>
                     <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
                         <h1 class="mb-4">상품 문의</h1>
-                        <p class="mb-4">맺어, 열매를 충분히 것은 살았으며, 이상을 인간은 그들을 유소년에게서 황금시대다. 노년에게서 때까지 위하여 이상의 물방아 이상 것이다. 붙잡아 뛰노는 우리 밥을 넣는 철환하였는가? 수 피가 꽃이 이상 이것이다. 그러므로 일월과 할지라도 작고 찬미를 내는 얼음과 위하여서. 이성은 영원히 싸인 크고 것이다. 꽃 청춘의 사람은 피고, 끝에 것이다. 영원히 대중을 어디 아니다. 힘차게 소담스러운 몸이 평화스러운 철환하였는가? 착목한는 긴지라 심장의 못할 남는 밝은 철환하였는가? 위하여서, 예수는 대중을 황금시대의 구할 평화스러운 못하다 인생에 보배를 사막이다.</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>찬미를 기쁘며, 눈이 앞이 피는 모래뿐일 옷을 칼이다. 날카로우나 봄바람이다. </p>
-                        <p><i class="fa fa-check text-primary me-3"></i>투명하되 청춘의 방황하여도, 반짝이는 남는 부패뿐이다. 가치를 이상을 얼마나 우는 관현악이며, </p>
-                        <p><i class="fa fa-check text-primary me-3"></i>이상 어디 눈에 할지라도 새가 때문이다.</p>
+                        <p class="mb-4">${vo.product_question}</p>
                     </div>
                     <div class="col-lg-12 wow fadeIn" data-wow-delay="0.5s">
                         <h1 class="mb-4">배송/교환/반품/환불/취소</h1>
-                        <p class="mb-4">맺어, 열매를 충분히 것은 살았으며, 이상을 인간은 그들을 유소년에게서 황금시대다. 노년에게서 때까지 위하여 이상의 물방아 이상 것이다. 붙잡아 뛰노는 우리 밥을 넣는 철환하였는가? 수 피가 꽃이 이상 이것이다. 그러므로 일월과 할지라도 작고 찬미를 내는 얼음과 위하여서. 이성은 영원히 싸인 크고 것이다. 꽃 청춘의 사람은 피고, 끝에 것이다. 영원히 대중을 어디 아니다. 힘차게 소담스러운 몸이 평화스러운 철환하였는가? 착목한는 긴지라 심장의 못할 남는 밝은 철환하였는가? 위하여서, 예수는 대중을 황금시대의 구할 평화스러운 못하다 인생에 보배를 사막이다.</p>
-                        <p><i class="fa fa-check text-primary me-3"></i>찬미를 기쁘며, 눈이 앞이 피는 모래뿐일 옷을 칼이다. 날카로우나 봄바람이다. </p>
-                        <p><i class="fa fa-check text-primary me-3"></i>투명하되 청춘의 방황하여도, 반짝이는 남는 부패뿐이다. 가치를 이상을 얼마나 우는 관현악이며, </p>
-                        <p><i class="fa fa-check text-primary me-3"></i>이상 어디 눈에 할지라도 새가 때문이다.</p>
+                        <p class="mb-4">${vo.product_cancel}</p>
+                        
                     </div>
                     <a class="btn btn-primary py-3 px-5 mt-3 orderForm" href="#">구매하기</a>
                     <a class="btn btn-primary py-3 px-5 mt-3 shoppingCart" href="#">장바구니</a>
                 </div>
+                </c:forEach>
             </div>
         </div>
         <!-- About End -->

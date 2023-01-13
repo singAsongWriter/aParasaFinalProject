@@ -33,6 +33,11 @@
 
     <!-- Template Stylesheet -->
     <link href="css/style.css" rel="stylesheet">
+    
+    
+    
+    
+    
 </head>
 
 <body>
@@ -69,22 +74,48 @@ if(request.getParameter("inc") != null){
                         <div class="nav-item dropdown">
                             <a href="#" class="nav-link dropdown-toggle nav-product" data-bs-toggle="dropdown">상품</a>
                             <div class="dropdown-menu rounded-0 m-0">
-                         		
-                         		<a href="#" class="dropdown-item" id = "홈인테리어" onclick="category_search(this.id)">홈인테리어</a>
-                                <a href="#" class="dropdown-item" id = "원예" onclick="category_search(this.id)">원예</a>
-                          		<a href="#" class="dropdown-item" id = "남성패션" onclick="category_search(this.id)">남성패션</a>
-                          		<a href="#" class="dropdown-item" id = "여성패션" onclick="category_search(this.id)">여성패션</a>
-                          		<a href="#" class="dropdown-item" id = "생활" onclick="category_search(this.id)">생활</a>
-                          		<a href="#" class="dropdown-item" id = "뷰티" onclick="category_search(this.id)">뷰티</a>
-                          		<a href="#" class="dropdown-item" id = "육아" onclick="category_search(this.id)">육아</a>
-                          		<a href="#" class="dropdown-item" id = "건강" onclick="category_search(this.id)">건강</a>
-                          		<a href="#" class="dropdown-item" id = "반려동물" onclick="category_search(this.id)">반려동물</a>
-                          		<a href="#" class="dropdown-item" id = "문화" onclick="category_search(this.id)">문화</a>
-                          		<a href="#" class="dropdown-item" id = "주류" onclick="category_search(this.id)">주류</a>
-                          		<a href="#" class="dropdown-item" id = "완구" onclick="category_search(this.id)">완구</a>
-                          		<a href="#" class="dropdown-item" id = "아트" onclick="category_search(this.id)">아트</a>
-                          		<a href="#" class="dropdown-item" id = "자동차용품" onclick="category_search(this.id)">자동차용품</a>
-                                
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="원예">원예</a>
+                            </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="의류">의류</a>
+                            </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="잡화">잡화</a>
+                            </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="수집품">수집품</a>
+                            </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="도서">도서</a>
+                           </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="구강/면도">구강/면도</a>
+                            </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="생리대/성인기저귀">생리대/성인기저귀</a>
+                            </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="헤어">헤어</a>
+                            </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="메이크업">메이크업</a>
+                            </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="임부용품">임부용품</a>
+                            </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="이유용품/유아식기">이유용품/유아식기</a>
+                            </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="강아지사료">강아지사료</a>
+                            </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="채소">채소</a>
+                            </form>
+                            <form name="frm">
+                                <a href="#" class="dropdown-item btnSearch" name="반찬/간편식/대용식">반찬/간편식/대용식</a>
+                            </form>                            
                             </div>
                         </div>
                         <div class="nav-item dropdown">

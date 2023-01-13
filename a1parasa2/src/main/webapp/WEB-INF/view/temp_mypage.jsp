@@ -1,5 +1,5 @@
-<%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+<%@ page language="java" contentType="text/html; charset=utf-8"
+    pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
@@ -12,13 +12,15 @@
                     <div class="col-lg-8 col-xlg-9 col-md-7">
                         <br><br>
                         <div class="card">
-                            <div class="card-block">
+                            <div class="card-block item">
+                            
+                            	<c:forEach var='vo' items='${list}'>
                             	<div class="form-group">
                             	<br>
                                 	<h4 class="col-md-12 u_profile_h4">이름</h4>
                                 	<br>
                                 	<div class="col-md-12 u_profile_div">
-                                    	<span >황도건</span>
+                                    	<span>${vo.name}</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -26,7 +28,7 @@
                                 	<h4 class="col-md-12 u_profile_h4">닉네임</h4>
                                 	<br>
 	                                <div class="col-md-12 u_profile_div">
-	                                	<span >준센</span>
+	                                	<span >${vo.nickname}</span>
 	                                </div>
                                 </div>
                                 <div class="form-group">
@@ -34,7 +36,7 @@
                                 	<h4 class="col-md-12 u_profile_h4">전화번호</h4>
                                     <br>
                                     <div class="col-md-12 u_profile_div">
-                                    	<span >010-1234-5678</span>
+                                    	<span>${vo.phone_number}</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -42,7 +44,7 @@
                                 	<h4 class="col-md-12 u_profile_h4">성별</h4>
                                     <br>
                                     <div class="col-md-12 u_profile_div">
-                                    	<span >남성</span>
+                                    	<span >${vo.gender}</span>
                                     </div>
                                 </div>
                                 <div class="form-group">
@@ -50,14 +52,18 @@
                                 	<h4 class="col-md-12 u_profile_h4">생년월일</h4>
                                     <br>
                                     <div class="col-md-12 u_profile_div">
-                                    	<span >1992/04/01</span>
+                                    	<span>${vo.birth}</span>
 									</div>
                                 </div>
                                 <div class="mt-5 col-md-6">
 									<a href="#" class="btn btn-primary profile-button mypage_modify_button">수정하기</a>
 								</div>
-                                
+								</c:forEach>
+								<form class="frm" method='post' enctype='multipart/form-data'>
+								<input type="text" name="login_id" value="${signIn.login_id}">
+                                </form>
                             </div>
+                            
                         </div>
                     </div>
                 </div>

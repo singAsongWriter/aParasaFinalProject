@@ -9,6 +9,9 @@
     <style>
 		@import url(./css/login.css);
 	</style>
+	<style>
+		@import url(../css/login.css);
+	</style>
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
     <meta content="" name="keywords">
     <meta content="" name="description">

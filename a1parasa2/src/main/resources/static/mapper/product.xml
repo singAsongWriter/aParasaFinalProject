@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="kr.ck.springboot.mybatis.ProductMapper">
+	<insert id="btnProductInsertR" parameterType="kr.ck.springboot.product.ProductVo">
+		insert into product (supplier_id, name, contents, price, 
+			category_id, created_at, updated_at, delivery_fee, product_detail, product_question,
+			product_cancel, howtoship) 
+		values (#{login_id}, #{name}, #{contents}, ${price}, 
+			#{category_id}, now(), now(), ${delivery_fee}, #{product_detail}, #{product_question}, 
+			#{product_cancel}, #{howtoship})
+	</insert>
+	<select id = 'product_list' parameterType="String" resultType = 'kr.ck.springboot.product.ProductVo'>
+		select * from product 
+		WHERE category_id=#{search} OR name LIKE '%${search}%'
+        OR contents LIKE '%${search}%'
+        order by updated_at
+	</select>
+	<select id = 'product_detail' parameterType="String" resultType = 'kr.ck.springboot.product.ProductVo'>
+		select * from product where id = #{id}
+	</select>
+</mapper>
